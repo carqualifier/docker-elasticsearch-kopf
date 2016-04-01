@@ -22,6 +22,6 @@ RUN curl -s -L "https://github.com/lmenezes/elasticsearch-kopf/archive/v${KOPF_V
 VOLUME ["/var/log/nginx"]
 
 # ports
-EXPOSE 80 443
+EXPOSE 1337 443
 
 ENTRYPOINT ["/run.sh"]

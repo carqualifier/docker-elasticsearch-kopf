@@ -42,7 +42,7 @@ http {
     ssl_certificate {{ KOPF_SSL_CERT }};
     ssl_certificate_key {{ KOPF_SSL_KEY }};
     {% else %}
-    listen 80;
+    listen 1337;
     {% endif %}
 
     server_name {{ KOPF_SERVER_NAME }};
