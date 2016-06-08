@@ -28,7 +28,7 @@ http {
 
   {% if KOPF_SSL_CERT is defined %}
   server {
-    listen 80;
+    listen 8001;
     server_name {{ KOPF_SERVER_NAME }};
     return 301 https://{{ KOPF_SERVER_NAME }}$request_uri;
   }
